@@ -1,0 +1,53 @@
+/* ======  Sass Variables ====== */
+
+// Define global variables here with hyphens. Module-specific go with individual module files.
+
+
+
+// Colors
+$black:                     #3c3c3b;
+$blue:                      #b3d4fc;
+$gray:	                    #d5d5d0;
+$green:						#007B56;
+$lightgray:					#e3e3e3;
+$white:                     #fff;
+
+$bg-base:                   #fafaf4;
+$link-blue:					#116CD6;
+
+// Type
+$family-fixed:              'Courier New', monospace;
+$family-heading:            'Oswald', Arial, sans-serif;
+$family-main:               'Roboto', Arial, sans-serif;
+
+$weight-main:               400;
+$weight-semibold:           600;
+$weight-bold:				700;
+
+// Base width/padding for different screen sizes
+$mobile-side-pad:           5%;
+$mobile-inner-pad:          10px;
+$tablet-side-pad:           4.5%;
+$tablet-inner-pad:          20px;
+$desktop-max-width:         68.750em;
+$desktop-inner-pad:         6%;
+$desktop-inner-pad-large:   7%;
+$desktop-sidebar-width:     26%;
+
+
+
+// Z-Index Scale
+$z-index-1:                 1000;
+$z-index-2:                 2000;
+$z-index-3:                 3000;
+$z-index-4:                 4000;
+$z-index-5:                 5000;
+$z-index-6:                 6000;
+$z-index-7:                 7000;
+$z-index-8:                 8000;
+$z-index-9:                 9000;
+$z-index-10:                10000;
+
+
+// Z-index- Applications
+$z-index-header:            $z-index-6;

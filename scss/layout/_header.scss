@@ -1,0 +1,31 @@
+.header {
+	background-color: $black;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: $z-index-header;
+}
+
+.header__title {
+	color: $white;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+@include small-only {
+	.header {
+		font-size: 1.500em;
+		line-height: 1.5em;
+		padding: 0.417em $mobile-side-pad;
+	}
+}
+
+@include medium-and-above {
+
+	.header__title {
+		font-size: 3em;
+		line-height: 1.5em;
+		padding: 0 5%;
+	}
+}

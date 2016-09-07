@@ -1,0 +1,26 @@
+.main {
+
+}
+
+@include small-only {
+	.main {
+		margin: 5em $mobile-side-pad 2em;
+	}
+}
+
+@include medium-and-above {
+	.main {
+		background-color: rgba(255,255,255,0.55);
+		border: 1px solid $gray;
+		margin: 7em auto 2em;
+		padding: $tablet-side-pad;
+		width: 95%;
+	}	
+}
+
+@include large-and-above {
+	.main {
+		padding: 2em;
+		width: 90%;
+	}
+}

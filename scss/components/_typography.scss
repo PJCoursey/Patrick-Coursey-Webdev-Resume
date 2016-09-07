@@ -1,0 +1,87 @@
+/* ===== Typography Styles ===== */
+
+// Set all type to antialiased by default.
+// Using 'inherit' for better specificity
+html {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+
+*,
+*:before,
+*:after {
+    -moz-osx-font-smoothing: inherit;
+    -webkit-font-smoothing: inherit;
+}
+
+html {
+	color: $black;
+	font-family: $family-main;
+	font-size: 16px;
+}
+
+
+/* ===== Heading Styles ===== */
+h1,
+h2 {
+	font-family: $family-heading;
+}
+
+h3,
+h4,
+h5,
+h6 {
+	font-family: $family-main;
+}
+
+/* ===== Anchor Styles ===== */
+a {
+	color: $link-blue;
+	cursor: pointer;
+	font-weight: $weight-semibold;
+	text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+/* ===== Paragraph Styles ===== */
+.p {
+	line-height: 1.625em;
+    margin: 0;
+	& + p {
+		margin-top: 1.125em;
+	}
+}
+
+/* ===== List Styles ===== */
+
+.ul {
+    > li {
+        min-width: 160px;
+        overflow: hidden;
+        padding-left: 15px;
+        position: relative;
+
+        &:before {
+            content: '\b7';
+            font-size: 24px;
+            left: 0;
+            position: absolute;
+            top: -4px;
+        }
+    }
+}
+
+/* ===== Text Styles ===== */
+strong,
+b {
+    font-weight: bold;
+}
+
+em,
+i {
+    font-style: italic;
+}
+

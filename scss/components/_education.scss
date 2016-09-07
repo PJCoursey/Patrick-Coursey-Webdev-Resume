@@ -1,0 +1,10 @@
+.education__list {
+	li {
+		line-height: 1.500em;
+		margin-top: 1.250em;
+
+		&:first-child {
+			margin-top: 0;
+		}
+	}
+}

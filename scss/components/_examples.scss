@@ -1,0 +1,8 @@
+.examples__item {
+	line-height: 1.625em;
+	margin-top: 1.3em;
+
+	&:first-child {
+		margin-top: 0;
+	}
+}

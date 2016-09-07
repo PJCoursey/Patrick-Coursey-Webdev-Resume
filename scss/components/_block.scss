@@ -1,0 +1,103 @@
+.block {
+
+	h3,
+	h4 {
+		font-weight: $weight-bold;
+	}
+}
+
+.block__title {
+	border-bottom: 1px solid $gray;
+	color: $black;
+	padding-bottom: 0.3em;
+	text-shadow: 2px 2px 1px $gray;
+	text-transform: uppercase;
+}
+
+@include small-only {
+	.block {
+		margin-bottom: 2em;
+
+		h3 {
+			font-size: 1.125em;
+		}
+	}
+
+	.block__title {
+		font-size: 1.325em;
+		margin: 0 0 .5em;
+		padding-bottom: 0.2em;
+	}
+
+	.block--work {
+		.block__title {
+			margin-bottom: 0.813em;
+		}
+	}
+}
+
+
+@include medium-and-above {
+
+	.block {
+		background-color: $white;
+		border: 1px solid $lightgray;
+		margin-top: 2em;
+		overflow: hidden;
+		padding: 2em;
+
+		h3 {
+			font-size: 1.188em;
+		}
+
+		h4 {
+			font-size: 1.063em;
+			line-height: 1.25em;
+		}
+	}
+
+	.block__title {
+		font-size: 1.8em;
+		margin: 0 0 1em;
+	}
+
+	.block.block--bio {
+		float: none;
+		margin: 0 auto;
+		max-width: 40em;
+	}
+
+	.block--bio {
+		.block__title {
+			text-align: center;
+		}
+	}
+
+}
+
+@include large-and-above {
+
+	.block {
+		float: left;
+	}
+
+	.block--education {
+		margin-left: 2%;
+		width: 44%;
+	}
+
+	.block--examples {
+		margin-left: 2%;
+		width: 40%;
+	}
+
+	.block--skills {
+		margin-right: 2%;
+		width: 52%;
+	}
+	
+	.block--work {
+		margin-right: 2%;
+		width: 56%;
+	}
+}
