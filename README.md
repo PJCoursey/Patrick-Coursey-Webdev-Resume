@@ -1,2 +1,3 @@
-# webdev-resume-codekit
-Patrick Coursey's front-end web development resume
+# Patrick Coursey's Front-end web development resume
+
+Built using Codekit
