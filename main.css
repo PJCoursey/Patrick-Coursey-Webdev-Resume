@@ -196,18 +196,15 @@ img {
 
 .header__social {
   background-color: #fff;
-  padding: 10px;
   position: absolute; }
 
-.header__social-item {
-  float: left; }
-  .header__social-item a {
-    color: #3c3c3b; }
-    .header__social-item a:hover {
-      color: #116CD6;
-      text-decoration: none; }
-  .header__social-item i {
-    margin-right: 6px; }
+.header__social-item a {
+  color: #3c3c3b; }
+  .header__social-item a:hover {
+    color: #116CD6;
+    text-decoration: none; }
+.header__social-item i {
+  margin-right: 6px; }
 
 .header__title {
   color: #fff;
@@ -216,16 +213,38 @@ img {
 
 @media (max-width: 675px) {
   .header {
+    padding: 0.417em 5%; }
+
+  .header__title {
     font-size: 1.500em;
-    line-height: 1.5em;
-    padding: 0.417em 5%; } }
+    line-height: 1.5em; }
+
+  .header__social {
+    margin-top: -15.5px;
+    padding: 7px;
+    right: 5%;
+    top: 50%; }
+
+  .header__social-item--github {
+    display: none; } }
 @media only screen and (min-width: 676px) and (max-width: 1000px) {
   .header__social {
     right: 2.5%; } }
 @media only screen and (min-width: 676px) {
   .header__social {
     margin-top: -18.5px;
+    padding: 10px;
     top: 50%; }
+
+  .header__social-item {
+    border-left: 2px solid #3c3c3b;
+    float: left;
+    margin-left: 10px;
+    padding-left: 10px; }
+    .header__social-item:first-child {
+      border-left: none 0;
+      margin-left: 0;
+      padding-left: 0; }
 
   .header__title {
     font-size: 3em;
@@ -233,16 +252,7 @@ img {
     padding: 0 5%; } }
 @media only screen and (min-width: 1001px) {
   .header__social {
-    right: 5%; }
-
-  .header__social-item {
-    border-left: 2px solid #3c3c3b;
-    margin-left: 10px;
-    padding-left: 10px; }
-    .header__social-item:first-child {
-      border-left: none 0;
-      margin-left: 0;
-      padding-left: 0; } }
+    right: 5%; } }
 @media (max-width: 675px) {
   .main {
     margin: 5em 5% 2em; } }
